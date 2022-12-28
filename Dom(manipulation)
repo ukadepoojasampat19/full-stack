@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body id="body">
+    <!-- when you give the id name any tag it become the gobal variables -->
+    <ul data="valid" id="pooja" >
+        <li class="list-items">First Element</li>
+        <li class="list-items">Second  Element</li>
+        <li class="list-items">Third Element</li>
+    </ul>
+    <div class="alldiv">First div</div>
+    <script>
+        // const a = document.getElementsByClassName("alldiv");
+        // console.log(a);
+        // in the above ducument methodeclassName is dynamic.they provide the reference so the value get changed next time.
+
+        // const a = document.querySelectorAll(".alldiv");
+        // console.log(a);
+        // in the above query selector is static
+
+    </script>
+    <div class="alldiv">Second div</div>
+    
+    <table>
+        <tr>
+            <td>1.1</td>  
+            <td>2.2</td>
+            <td>3.3</td>
+            <td>4.4</td>
+            <td>5.5</td>
+            <td>6.6</td>
+        </tr>
+        <tr>
+            <td>1.1</td>  
+            <td>2.2</td>
+            <td>3.3</td>
+            <td>4.4</td>
+            <td>5.5</td>
+            <td>6.6</td>
+         </tr>  
+        <tr>
+            <td>1.1</td>  
+            <td>2.2</td>
+            <td>3.3</td>
+            <td>4.4</td>
+            <td>5.5</td>
+            <td>6.6</td>
+        </tr>
+        <tr>
+            <td>1.1 </td>  
+            <td>2.2 </td>
+            <td>3.3 </td>
+            <td>5.5 </td>
+            <td>4.4 </td>
+            <td>6.6 </td>
+        </tr>
+        <tr>
+            <td>1.1 </td>  
+            <td>2.2 </td>
+            <td>3.3 </td>
+            <td>4.4 </td>
+            <td>5.5 </td>
+            <td>6.6 </td>
+        </tr>
+        <tr>
+            <td>1.1 </td>  
+            <td>2.2 </td>
+            <td>3.3 </td>
+            <td>4.4 </td>
+            <td>5.5 </td>
+            <td>6.6 </td>
+        </tr>
+        
+    </table>
+    <script>
+        // task to apply disffrent color to rows.
+       
+        // console.log(document.body.children[1].children[0].rows[0].style = "background-color: blue")
+        // console.log(document.body.children[1].children[0].rows[1].style = "background-color: red")
+        // console.log(document.body.children[1].children[0].rows[2].style = "background-color: yellow")
+        // console.log(document.body.children[1].children[0].rows[3].style = "background-color: green")
+        // console.log(document.body.children[1].children[0].rows[4].style = "background-color: pink")
+        // console.log(document.body.children[1].children[0].rows[5].style = "background-color: orange")
+       
+        //html is the root node 
+        // tp print the root node
+
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+
+        // childn.
+
+        // console.log(document.body.childNodes)
+        // // to avoid the text written at the first below line is used as in htmla small indentation is also consider as a node.1
+        //  console.log(document.body.children)
+        //  for(node of document.body.childNodes )
+        //  {
+        //     console.log(node);
+
+        //  }
+
+        // TO ACESS FIRST AND LAAST CHILD
+
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // console.log(document.body.firstChild)
+        // console.log(document.body.lastChild)
+        
+        // want to convert it in the form of array.
+
+    //    const childOfBody =  Array.from(document.body.childNodes);
+    //    console.log(childOfBody);
+
+    //sibling.
+
+    // const ulTag=(document.body.children[0]);
+    // const firstLi=ulTag.children[0];
+    // console.log(firstLi);
+    // const secondLi=ulTag.children[1];
+    // console.log(secondLi);
+    // const thirdLi=ulTag.children[2];
+    // console.log(thirdLi.previousElementSibling.textContent);
+    // console.log(ulTag.nextElementSibling);
+       
+    // table DOM namupulation
+
+    // const tableTag=(document.body.children[1]);
+    // console.log(tableTag.tBodies[0].rows[0].cells[0].style = "background-color: blue");
+//    console.log(tableTag.rows);
+
+// id search
+// console.log(element.style = "background-color: red");
+// to get the element by getidmethode
+// const ulTag = document.getElementById("element");
+// ulTag.style.backgroundColor="red";
+//   const ulTag=document.getElementsByClassName("list-items");  
+//    console.log(ulTag[0].style.color="red");
+//    console.log(ulTag[1].style.color="blue");
+//    console.log(ulTag[2].style.color="orange");
+
+//    console.log(document.getElementsByTagName("table"))
+
+// const listItems = document.getElementsByClassName("list-items");
+// console.log(listItems);
+// const list1 = document.querySelector("#element");
+// console.log(list1);
+// from the above we can acess the content by id.
+// const list2 = document.querySelectorAll(".list-items");
+// console.log(list2);
+// int above we are acess it by class name 
+
+// pseudo selector.
+
+// const listItem = document.querySelector('ul > li:last-child');
+// console.log(listItem.textContent);
+
+// if want to print the any one in between used nth term.
+
+// const list = document.querySelector("ul > li:nth-child(2)");
+// console.log(list.textContent);
+
+
+
+
+//    selector.
+
+// console.log(a);
+// console.log(element.data);
+// we cannot acess the userdefine attributes in the above manner.
+// predefine can be acess easily but useer defined need to be some way.
+// getAttributes methode is used ti print the value of user defined attributes.
+
+console.log(pooja.getAttribute("data"));
+   </script>
+
+
+</body>
+</html>
