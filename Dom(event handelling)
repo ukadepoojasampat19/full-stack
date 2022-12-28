@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="clickbtn" onclick="prompt('hello')">Click me</button>
+    <!-- second methode -->
+<script>
+//    have to pass the function
+// dont called the function.
+
+// below is called calling a function which is not used because before cliking the button or any else.
+
+// object of event.
+function store(event)
+    {
+        console.log(event.type);
+        console.log(event.currentTarget);
+        console.log(event.clientY);
+        console.log(event.clientX);
+        
+
+        alert("ppoja");
+    };
+    // clickbtn.onclick = store;
+// right way.
+
+// clickbtn.onclick = function()
+// {
+//     alert("hey pooja");
+// }
+clickbtn.onclick =function() {
+    console.log(this);
+    /* whenever you called the (this) the refrence of (this) will we event of that element.*/
+    const name=prompt("enter name:")}
+// in the above the function is not calling repeatdly.
+// to called the multiple function repeatdly used the below Event.
+
+ clickbtn.addEventListener('click',store)
+ clickbtn.addEventListener('click',function()/*1)memory*/
+ {
+    alert("hey hii dear.");
+ })
+//  clickbtn.addEventListener('click',store)
+
+// actually the onclick should be called three times but the attributed replace with each other so it is called two times.
+
+// lly we can remove the function also.
+
+// clickbtn.removeEventListener("click",store);
+// in the above exampale we have passed the referenced of the fuction(the memory location at which the function is  store for removing we paseed the reference to the remove function.)so it is delted.
+// but if try to delte the below let see!
+
+// clickbtn.removeEventListener("click",function()/*2) different*/
+//  {
+//     alert("hey hii dear.");
+//  })
+
+//  since in the above the memory location are different in the add and remove case so this type of function we cannot delete.
+
+
+    
+</script>
+    
+
+</body>
+</html>
