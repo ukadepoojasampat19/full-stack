@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Bulb</title>
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+           
+        } 
+        .btn {
+            padding: 20px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <img id="bulb" src="https://www.freeiconspng.com/thumbs/bulb-off-icon/bulb-off-icon-14.jpg" alt="bulb image" class="center">
+    <button id="togglebtn" class="center btn">Turn On</button>
+    <script>
+    //1)first i have to fetch that id getElementByid methode is used.
+    let btn = document.getElementById("togglebtn");
+    let bulb = document.getElementById("bulb");
+    
+    
+    btn.addEventListener("click",ToggleFun)
+
+    function ToggleFun(e) {
+        if(btn.textContent.includes("Turn On"))
+        {
+            bulb.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXdMUEB5N0AAqjs9gYacgsIeqL99Pn1XWBuK-UhrmcFfbd7EBhMRg4nzJ6PUkhcqHMk4&usqp=CAU";
+            btn.textContent="Turn Off";
+        }
+        else{
+            bulb.src="https://www.freeiconspng.com/thumbs/bulb-off-icon/bulb-off-icon-14.jpg";
+            btn.textContent="Turn On";
+         }
+        // bulb.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8rsxZcfqCqZ7n56IfhDHnlA_eAyOJu8EuNQAflm0mSvj1jTPcl27q-uzVbVXrlJOPaI&usqp=CAU";
+       
+
+    }
+    // documenet.bulb.addEventListener("click",<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8rsxZcfqCqZ7n56IfhDHnlA_eAyOJu8EuNQAflm0mSvj1jTPcl27q-uzVbVXrlJOPaI&usqp=CAU" alt="glow bulb">);
+    </script>
+    
+</body>
+</html>
