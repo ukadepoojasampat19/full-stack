@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure {
+            width: 50%;
+            border: 5px solid black;
+            background-color: grey;
+            padding: 3%;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+  
+        <a href="#Bottom of the page">Bottom of the page</a>
+        <a name="Definition and Usage"></a>
+   
+    <h3>Definition and Usage. </h3>
+    
+    <figure>
+        Semantic HTML tags are tags that define the meaning of the content they contain. For example, tags like <header>, <article>, and <footer> are semantic HTML tags. They clearly indicate the role of the content they contain. On the other hand, tags like<div> and <span> are typical examples of non-semantic HTML elements.02-Dec-2022
+    </figure>
+    <article>Definition and Usage. Thetag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc. While the content of the element is related to the main flow, its position is independent of the main flow, and if removed it should not affect the flow of the document.
+        In simple words, the figure tag is used to semantically organize the content of images, videos, audios or even charts or tables, block of codes in the HTML document.</article>
+    <p>Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph. This is both semantic and presentational because people know what paragraphs are, and browsers know how to display them.
+
+        On the flip side of this equation, tags such as <b> and <i> are not semantic. They define only how the text should look (bold or italic), and don't provide any additional meaning to the markup.
+        
+        Examples of semantic HTML tags include:
+        
+        Header tags <h1> through <h6>
+        <blockquote>
+        <code>
+        <em>
+        There are many more semantic HTML tags to use as you build a standards-compliant website.
+        
+        Why You Should Care About Semantics
+        The benefit of writing semantic HTML stems from what should be the driving goal of any web page: the desire to communicate. By adding semantic tags to your document, you provide additional information about that document, which aids in communication. Specifically, semantic tags make it clear to the browser what the meaning of a page and its content is. That clarity is also communicated with search engines, ensuring that the right pages are delivered for the right queries.
+        
+        Semantic HTML tags provide information about the contents of those tags that goes beyond just how they look on a page. Text that is enclosed in the <code> tag is immediately recognized by the browser as some type of coding language. Instead of trying to render that code, the browser understands that you are using that text as an example of the code for the purposes of an article or online tutorial.
+        
+        Using semantic tags gives you many more hooks for styling your content, too. Perhaps today you prefer to have your code samples display in the default browser style, but tomorrow, you might want to call them out with a gray background color; later still, you might want to define the precise mono-spaced font family or font stack to use for your samples. You can do all of these things easily by using semantic markup and smartly applied CSS.
+        
+        </p>
+
+        <p>When using semantic tags to convey meaning rather than for presentation purposes, be careful that you don't use them incorrectly simply for their common display properties. Some of the most commonly misused semantic tags include:
+
+            blockquote — Some people use the <blockquote> tag for indenting text that is not a quotation. This is because blockquotes are indented by default. If you simply want to indent text that's not a blockquote, use CSS margins instead.
+            p — Some web editors use <p>&nbsp;</p> (a non-breaking space contained in a paragraph) to add extra space between page elements, rather than defining actual paragraphs for the text of that page. As in the previous example, you should use the margin or padding style property instead to add space.​
+            ul — As with <blockquote>, enclosing text inside a <ul> tag indents that text in most browsers. This is both semantically incorrect and invalid HTML, because only <li> tags are valid within a <ul> tag. Again, use the margin or padding style to indent text.
+            h1, h2, h3, h4, h5, and h6 — You can use heading tags to make fonts bigger and bolder, but if the text is not a heading, use the font-weight and font-size CSS properties instead.
+            By using HTML tags that have meaning, you create pages that impart more information than those that simply surround everything with <div> tags</p>
+        <a href="#Definition and Usage">Top of the page</a>
+        <a name="Bottom of the page"></a>
+</body>
+</html>
